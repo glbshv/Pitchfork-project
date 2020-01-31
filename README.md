@@ -1,1 +1,0 @@
-# Pitchfork project
