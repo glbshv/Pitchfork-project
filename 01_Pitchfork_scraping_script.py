@@ -3,19 +3,15 @@
 from bs4 import BeautifulSoup
 import urllib.request
 from urllib.error import URLError, HTTPError
-from IPython.display import HTML
-import re
 import pandas as pd
 from time import sleep
-from random import randint
-from requests import get
 
 """**Review page URL constructor:**"""
 
 base_url = 'https://pitchfork.com/reviews/albums/?page='
 links_to_review_pages = list()
 
-for i in range(1, 1845):
+for i in range(1, 1866):
     links_to_review_pages.append(base_url + str(i))
 print('Pages to scrape: ' + str(len(links_to_review_pages)))
 
